@@ -1,0 +1,797 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>app排行榜 | xiaobao</title>
+    <meta name="author" content="BaoQiang">
+    
+    <meta name="description" content="小包小包">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="app排行榜"/>
+    <meta property="og:site_name" content="xiaobao"/>
+
+    
+    <meta property="og:image" content="undefined"/>
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="xiaobao" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body>
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+
+    <nav class="green">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">xiaobao</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav green darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://tva4.sinaimg.cn/crop.0.0.290.290.180/5c4190b0jw8eogzzejorjj2082082gmj.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">小包</p>
+                        <p class="desc">Java/Python/跑步/魔方/etc</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav green darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/生活/">
+                    生活 <span class="right">41 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/生活/next/">
+                    next <span class="right">10 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/生活/成长/">
+                    成长 <span class="right">9 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/生活/跑步/">
+                    跑步 <span class="right">8 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/生活/杂感/">
+                    杂感 <span class="right">5 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/生活/日常/">
+                    日常 <span class="right">8 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/生活/情趣/">
+                    情趣 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/技术/">
+                    技术 <span class="right">6 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/技术/教程/">
+                    教程 <span class="right">5 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/技术/推荐/">
+                    推荐 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper green">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/技术/">技术</a><a class="breadcrumb" href="/categories/技术/推荐/">推荐</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>app排行榜</h1>
+    
+
+
+            </div>
+            <time class="red-link-context" datetime="2017-09-30T08:58:22.000Z"><a href="/201709/post20170930_app排行榜/">2017-09-30</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+
+            <div class="toc red-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#游戏直播"><span class="section table-of-contents-text">游戏直播</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#短视频"><span class="section table-of-contents-text">短视频</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#在线视频"><span class="section table-of-contents-text">在线视频</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#音乐"><span class="section table-of-contents-text">音乐</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#拍照美图"><span class="section table-of-contents-text">拍照美图</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#移动电台"><span class="section table-of-contents-text">移动电台</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#综合资讯"><span class="section table-of-contents-text">综合资讯</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#体育资讯"><span class="section table-of-contents-text">体育资讯</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#财经资讯"><span class="section table-of-contents-text">财经资讯</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#电商"><span class="section table-of-contents-text">电商</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#旅游"><span class="section table-of-contents-text">旅游</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#订餐"><span class="section table-of-contents-text">订餐</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#母婴"><span class="section table-of-contents-text">母婴</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#出行"><span class="section table-of-contents-text">出行</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#阅读"><span class="section table-of-contents-text">阅读</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#美食"><span class="section table-of-contents-text">美食</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#团购"><span class="section table-of-contents-text">团购</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#应用市场"><span class="section table-of-contents-text">应用市场</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#安全优化"><span class="section table-of-contents-text">安全优化</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#浏览器"><span class="section table-of-contents-text">浏览器</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#输入法"><span class="section table-of-contents-text">输入法</span></a></li></ol>
+</div>
+
+
+            <div class="entry red-link-context">
+                <h4 id="游戏直播"><a href="#游戏直播" class="headerlink" title="游戏直播"></a>游戏直播</h4><ul>
+<li>斗鱼直播</li>
+<li>虎牙直播</li>
+<li>熊猫直播</li>
+<li>触手直播</li>
+<li>战旗直播</li>
+</ul>
+<h4 id="短视频"><a href="#短视频" class="headerlink" title="短视频"></a>短视频</h4><ul>
+<li>快手</li>
+<li>美拍</li>
+<li>秒拍</li>
+<li>小影</li>
+<li>小咖秀</li>
+</ul>
+<h4 id="在线视频"><a href="#在线视频" class="headerlink" title="在线视频"></a>在线视频</h4><ul>
+<li>腾讯</li>
+<li>爱奇艺</li>
+<li>优酷</li>
+<li>乐视</li>
+<li>搜狐视频</li>
+</ul>
+<h4 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h4><ul>
+<li>QQ音乐</li>
+<li>酷狗音乐</li>
+<li>酷我音乐</li>
+<li>网易云音乐</li>
+<li>虾米音乐</li>
+</ul>
+<h4 id="拍照美图"><a href="#拍照美图" class="headerlink" title="拍照美图"></a>拍照美图</h4><ul>
+<li>美图秀秀</li>
+<li>美颜相机</li>
+<li>天天P图</li>
+<li>相机360</li>
+<li>in</li>
+</ul>
+<h4 id="移动电台"><a href="#移动电台" class="headerlink" title="移动电台"></a>移动电台</h4><ul>
+<li>喜马拉雅FM</li>
+<li>蜻蜓FM</li>
+<li>酷我听书FM</li>
+<li>考拉FM</li>
+<li>企鹅FM</li>
+</ul>
+<h4 id="综合资讯"><a href="#综合资讯" class="headerlink" title="综合资讯"></a>综合资讯</h4><ul>
+<li>今日头条</li>
+<li>腾讯新闻</li>
+<li>网易新闻</li>
+<li>搜狐新闻</li>
+<li>一点资讯</li>
+</ul>
+<h4 id="体育资讯"><a href="#体育资讯" class="headerlink" title="体育资讯"></a>体育资讯</h4><ul>
+<li>直播吧</li>
+<li>新浪体育</li>
+<li>腾讯体育</li>
+<li>乐视体育</li>
+<li>虎扑体育</li>
+</ul>
+<h4 id="财经资讯"><a href="#财经资讯" class="headerlink" title="财经资讯"></a>财经资讯</h4><ul>
+<li>华尔街见闻</li>
+<li>新浪财经</li>
+<li>21财经</li>
+<li>汇通财经</li>
+<li>网易财经</li>
+</ul>
+<h4 id="电商"><a href="#电商" class="headerlink" title="电商"></a>电商</h4><ul>
+<li>淘宝</li>
+<li>京东</li>
+<li>唯品会</li>
+<li>天猫</li>
+<li>苏宁易购</li>
+</ul>
+<h4 id="旅游"><a href="#旅游" class="headerlink" title="旅游"></a>旅游</h4><ul>
+<li>携程旅行</li>
+<li>去哪儿旅行</li>
+<li>飞猪旅行</li>
+<li>同程旅行</li>
+<li>驴妈妈</li>
+</ul>
+<h4 id="订餐"><a href="#订餐" class="headerlink" title="订餐"></a>订餐</h4><ul>
+<li>饿了吗</li>
+<li>美团外卖</li>
+<li>百度外卖</li>
+<li>口碑外卖</li>
+<li>达达商家</li>
+</ul>
+<h4 id="母婴"><a href="#母婴" class="headerlink" title="母婴"></a>母婴</h4><ul>
+<li>孕育管家</li>
+<li>宝宝树孕育</li>
+<li>妈妈网</li>
+<li>亲宝宝</li>
+<li>辣妈帮</li>
+</ul>
+<h4 id="出行"><a href="#出行" class="headerlink" title="出行"></a>出行</h4><ul>
+<li>滴滴出行</li>
+<li>摩拜单车</li>
+<li>ofo共享单车</li>
+<li>神舟专车</li>
+<li>小蓝专车</li>
+</ul>
+<h4 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h4><ul>
+<li>内涵段子</li>
+<li>糗事百科</li>
+<li>百思不得其姐</li>
+<li>一句心情签名</li>
+<li>为你朗诵</li>
+</ul>
+<h4 id="美食"><a href="#美食" class="headerlink" title="美食"></a>美食</h4><ul>
+<li>下厨房</li>
+<li>豆果美食</li>
+<li>香哈菜谱</li>
+<li>美食杰</li>
+<li>好豆菜谱</li>
+</ul>
+<h4 id="团购"><a href="#团购" class="headerlink" title="团购"></a>团购</h4><ul>
+<li>美团</li>
+<li>大众点评</li>
+<li>百度糯米</li>
+<li>拼多多</li>
+<li>拉手团购</li>
+</ul>
+<h4 id="应用市场"><a href="#应用市场" class="headerlink" title="应用市场"></a>应用市场</h4><ul>
+<li>应用宝</li>
+<li>百度手机助手</li>
+<li>华为应用市场</li>
+<li>豌豆荚</li>
+<li>小米应用市场</li>
+</ul>
+<h4 id="安全优化"><a href="#安全优化" class="headerlink" title="安全优化"></a>安全优化</h4><ul>
+<li>360手机卫士</li>
+<li>腾讯手机管家</li>
+<li>百度手机卫士</li>
+<li>猎豹安全大师</li>
+<li>乐安全</li>
+</ul>
+<h4 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h4><ul>
+<li>QQ浏览器</li>
+<li>UC浏览器</li>
+<li>搜狗浏览器</li>
+<li>360浏览器</li>
+<li>百度浏览器</li>
+</ul>
+<h4 id="输入法"><a href="#输入法" class="headerlink" title="输入法"></a>输入法</h4><ul>
+<li>搜狗输入法</li>
+<li>百度输入法</li>
+<li>讯飞输入法</li>
+<li>QQ输入法</li>
+<li>谷歌输入法</li>
+</ul>
+<blockquote>
+<div align="center">小包么么哒</div></blockquote>
+
+                
+<p class="red-link-context">
+    <a href="/201710/post20171005_北京购物中心/" rel="next" title="北京购物中心">
+    上一篇：北京购物中心
+  </a>
+</p>
+
+
+
+<p class="red-link-context">
+    <a href="/201709/post20170926_保护视力/" rel="next" title="保护视力">
+    下一篇：保护视力
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large red">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect cyan" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse light-green"  data-activates="main-menu" title="菜单"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer green darken-1">
+    
+    <div class="footer-container container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/hustbao" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/githubao" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+    <div class="site-visitors-container white-text">
+        <span>
+            <i class="fa fa-user"></i>
+            <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+        </span>
+        <span>&nbsp;|&nbsp;</span>
+        <span>
+            <i class="fa fa-eye"></i>
+            <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+        </span>
+    </div>
+
+
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="https://www.google.com/ncr" target="_blank">伟大的Google</a>
+                
+                    <a class="social-link" href="http://www.tuling123.com" target="_blank">亲爱的公司官网</a>
+                
+                    <a class="social-link" href="http://httpbin.org/image/png" target="_blank">好奇害死猫</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright red-link-context">
+        <div class="container">
+            © 2017, No rights reserved (⊙﹏⊙)b.
+            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('red lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading').append('<span class="new badge red"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword red lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword red lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
